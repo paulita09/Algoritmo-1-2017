@@ -1,0 +1,38 @@
+// mayor_18.cpp : Defines the entry point for the console application.
+//Autor: Ana Paula Mercado Aguilar
+//Fecha: 22/02/2017
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+
+using namespace std;
+
+void main()
+{
+	int genero,edad,n;
+
+		cout<<" Ingrese genero 1 si es hombre o 2 si es mujer "<<endl;
+	    cin>> genero;
+		
+		if(genero==1)
+		{	cout<<"Ingrese su edad"<<endl;
+		    cin>> edad;
+		    if(edad>=65)
+				cout<<" Puede jubilarse";
+			else
+				cout<<" No puede jubilarse";
+		}
+		else
+		{   cout<<" Ingrese su edad:"<<endl;
+		    cin>>edad;
+			cout<<" Cuantos hijos tiene: "<<endl;
+			cin>>n;
+			edad=n+edad;
+			if(edad>=60)
+				cout<<" Puede jubilarse";
+			else
+				cout<<" No puede jubilarse";
+		}
+		getch();
+}
