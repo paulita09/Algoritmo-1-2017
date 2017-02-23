@@ -1,0 +1,21 @@
+// mayor_18.cpp : Defines the entry point for the console application.
+//Autor: Ana Paula Mercado Aguilar
+//Fecha: 22/02/2017
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+using namespace std;
+
+void main ()
+{
+	int edad;
+	   cout<<"ingrese el valor de su edad:"<<endl;
+	   cin>> edad;
+	   
+	   if(edad>=18)
+
+		   cout<<"Usted si esta habilitado para votar";
+
+	   getch();
+}
