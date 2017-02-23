@@ -1,0 +1,53 @@
+// mayor_18.cpp : Defines the entry point for the console application.
+//Autor: Ana Paula Mercado Aguilar
+//Fecha: 22/02/2017
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+#include "math.h"
+
+using namespace std;
+
+void main()
+{
+	int opcion;
+	float base,altura,area,lado,radio;
+	cout<< "1.Calcular el area del triangulo"<<endl;
+	cout<< "2.Calcular el area del cuadrado"<<endl;
+	cout<< "3.Calcular el area del circulo"<<endl;
+	cout<< "0.Finalizar"<<endl;
+	cout<< "digite una opcion:"<<endl;
+	cin>>opcion;
+	switch(opcion)
+	{
+	case 1:
+		cout<<" Ingrese la base del triangulo:"<<endl;
+		cin>>base;
+		cout<<" Ingrese la altura del triangulo:"<<endl;
+		cin>>altura;
+		area=(base*altura)/2;
+		cout<<" El area del triangulo es:"<<area;
+		break;
+	case 2:
+		cout<<" Ingrese el lado del cuadrado:"<<endl;
+		cin>>lado;
+		area=(lado*lado);
+		cout<<" El area del cuadrado es:"<<area;
+		break;
+
+	case 3:
+		cout<<" Ingrese el radio del circulo:"<<endl;
+		cin>>radio;
+		area=(3.14*(powf(radio,2)));
+		cout<<" El area del circulo es:"<<area;
+		break;
+	case 0:
+		cout<<" FIN DEL PROCESO"<<endl;
+		break;
+	default:
+		cout<<" opcion invalida"<<endl;
+		break;
+	}
+getch();
+}
