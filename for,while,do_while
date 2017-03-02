@@ -1,0 +1,112 @@
+while:
+/Autor: Nicole Ayupe B. y Ana Paula mercado
+//Fecha: 17/09/2015
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+using namespace std;
+void main()
+{
+    float b,h,p,B;
+    char resp;
+      cout<< "Ingrese la base mayor distinta de cero: " <<endl;
+      cin>>B;
+      while(B!= 0)
+     {
+      cout<< "ingrese la altura: " <<endl;
+      cin>>h;
+      cout<< "ingrese la base menor: " <<endl;
+      cin>>b;
+      p=((b+B)*h)/2;
+      cout<< "el area es: " <<p<<endl;
+      cout<< "Ingrese la base mayor distinta de cero: " <<endl;
+      cin>>B;
+    }
+
+    getch();
+}
+
+
+for:
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+
+using namespace std;
+
+void main()
+{
+    int n,i;
+    float iva,sueldo,suma=0,sueldomin;
+    cout<<"Ingrese el numero de personas que desea calcular sus impuestos:";
+    cin>>n;
+    sueldomin=(2*1656);
+    for (i=1;i<=n;i++)
+    {    cout<<"Ingrese su cantidad de dinero:"<<i<<": ";
+        cin>>sueldo;
+        iva=0;
+         if (sueldo>sueldomin)
+             iva= sueldo*0.13;
+             cout<<"El impuesto a pagar es:"<<i<<": "<<iva<<endl;
+             suma=suma+iva;
+    }
+       
+    cout<<"El impuesto total a pagar es: "<<suma<<endl;
+
+    getch();
+}
+
+dowhile:
+
+// dowhile.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+#include "math.h"
+
+using namespace std;
+
+int main()
+{ int opcion,n,doble,cuadrado;
+  float mitad;
+    cout<< "1.Calcular el doble de un numero entero"<<endl;
+    cout<< "2.Calcular la mitad de un numero entero"<<endl;
+    cout<< "3.Calcular el cuadrado de un numero entero"<<endl;
+    cout<< "0.Finalizar"<<endl;
+    cout<< "digite una opcion:"<<endl;
+    cin>>opcion;
+    switch(opcion)
+    {
+    case 1:
+        cout<<" Ingrese un numero entero:"<<endl;
+        cin>>n;
+        doble= n+n;
+        cout<<" El doble de n es:"<<doble;
+        break;
+    case 2:
+        cout<<" Ingrese un numero entero:"<<endl;
+        cin>>n;
+        mitad=n/2;
+        cout<<" La mitad de n es:"<<mitad;
+        break;
+
+    case 3:
+        cout<<" Ingrese un numero entero:"<<endl;
+        cin>>n;
+        cuadrado=(n*n);
+        cout<<" El cuadrado de n es:"<<cuadrado;
+        break;
+    case 0:
+        cout<<" FIN DEL PROCESO"<<endl;
+        break;
+    default:
+    cout<<" opcion invalida"<<endl;
+    break;
+    }
+    while(opcion!=0);
+    getch();
+    }
